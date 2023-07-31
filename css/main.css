@@ -1,0 +1,96 @@
+@charset "utf-8";
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/henrik-donnestad-0avP6Ay7ro4-unsplash.jpg)no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+
+.search{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.search #search_input{
+    width: 350px;
+    padding: 10px 15px;
+    border-radius: 24px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    text-indent: 10px;
+}
+
+.search #btn_search{
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 24px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.search input::placeholder{
+    color: #fff;
+}
+.search #btn_search:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+.inner{
+    width: 90%;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+}
+
+.inner h2{
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+.inner ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.inner ul li{
+    font-size: 70px;
+    margin: 50px 0;
+    position: relative;
+}
+.inner ul li span{
+    font-size: 20px;
+    font-weight: normal;
+}
+.inner ul li::before{
+    content: '';
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.inner ul li:first-child::before{
+    display: none;
+}
+.inner p{
+    text-align: center;
+    font-size: 20px;
+}
+.inner p span{
+    font-size: 30px;
+    font-weight: bold;
+}
